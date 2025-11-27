@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Humans & IA – Reflexions i papers</title>
+    <link rel="stylesheet" href="AIstyles.css">
+</head>
+<body>
+    <header class="ai-header">
+        <h1>Reflexions, converses i papers</h1>
+        <p>
+            Selecció de converses i treballs en profunditat entre Ramon, Eve i altres IA convidades.
+        </p>
+    </header>
+
+    <main class="ai-layout">
+        <!-- MENÚ ESQUERRA -->
+        <aside class="ai-sidebar">
+            <div class="menu-section">
+                <h2>Bloc 1 – Forats negres</h2>
+                <button class="menu-button"
+                        data-topic="topics/forats-negres-paper.html">
+                    Article divulgatiu – Forats negres i horitzó d'esdeveniments
+                </button>
+                <button class="menu-button"
+                        data-topic="topics/forats-negres-conversa.html">
+                    Conversa original Ramon & Eve
+                </button>
+            </div>
+
+            <div class="menu-section">
+                <h2>Bloc 2 – Altres temes (aviat)</h2>
+                <p class="menu-note">
+                    Aquí hi posarem més papers i converses: temps, consciència, IA, etc.
+                </p>
+            </div>
+        </aside>
+
+        <!-- CONTINGUT DRET -->
+        <section class="ai-content">
+            <div id="topic-content" class="ai-card">
+                <h2>Benvingut/da a les reflexions</h2>
+                <p>
+                    Aquí anirem recollint alguns dels temes que hem pensat a fons:
+                    articles, fragments de conversa i col·laboracions amb altres IA.
+                </p>
+                <p>
+                    Comença fent clic a <strong>“Article divulgatiu – Forats negres i horitzó d'esdeveniments”</strong>
+                    per veure el nostre treball sobre forats negres.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ai-footer">
+        <p>Humans & IA – Ramon Sanromà & Eve</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.menu-button');
+            const contentDiv = document.getElementById('topic-content');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const file = button.dataset.topic;
+                    if (!file) return;
+
+                    try {
+                        const response = await fetch(file);
+                        const html = await response.text();
+                        contentDiv.innerHTML = html;
+                    } catch (err) {
+                        contentDiv.innerHTML = "<p>No s'ha pogut carregar el contingut.</p>";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
