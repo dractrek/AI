@@ -190,3 +190,34 @@ dl dd {
         border-bottom: 1px solid var(--border);
     }
 }
+
+
+.chat-log {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.chat-message {
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.chat-message .speaker {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    opacity: 0.85;
+}
+
+/* lleuger canvi de to per distingir-te de mi */
+.chat-message.from-ramon {
+    border-left: 3px solid #9ae6ff;
+}
+
+.chat-message.from-eve {
+    border-left: 3px solid #d6b3ff;
+}
+
