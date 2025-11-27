@@ -1,9 +1,152 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrevistes a intel·ligències artificials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --border: #dddddd;
+            --accent: #6a4dd8;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+        }
+
+        header h1 {
+            margin: 0 0 0.25rem 0;
+        }
+
+        header p {
+            margin: 0;
+            max-width: 900px;
+        }
+
+        header nav a {
+            margin-right: 1rem;
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .layout {
+            display: flex;
+            min-height: calc(100vh - 80px);
+        }
+
+        aside.sidebar {
+            width: 280px;
+            max-width: 100%;
+            border-right: 1px solid var(--border);
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        aside h2 {
+            margin-top: 0;
+        }
+
+        details {
+            margin-bottom: 0.75rem;
+        }
+
+        details > summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .menu-button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            border: none;
+            background: none;
+            padding: 0.25rem 0.25rem;
+            margin: 0.1rem 0;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .menu-button:hover {
+            background: #f2f0ff;
+        }
+
+        .menu-button.active {
+            background: #e2ddff;
+            font-weight: 600;
+        }
+
+        main#content {
+            flex: 1;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            max-width: 900px;
+        }
+
+        main h1, main h2, main h3 {
+            margin-top: 0;
+        }
+
+        .langs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .langs section {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .langs h3 {
+            margin-top: 0;
+        }
+
+        dl dt {
+            font-weight: 600;
+            margin-top: 0.6rem;
+        }
+
+        dl dd {
+            margin-left: 0;
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 800px) {
+            .layout {
+                flex-direction: column;
+            }
+            aside.sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    </style>
+</head>
 <body>
 <header>
     <h1>Entrevistes a intel·ligències artificials</h1>
     <p>
-        Preguntes comunes a diferents IA sobre consciència, límits, ètica i futur,
-        amb les respostes publicades en català i en anglès.
+        Preguntes i diàlegs amb diferents IA. El menú de l’esquerra permet navegar per temes
+        i entrevistes. Cada peça inclou versió en català i en anglès.
     </p>
     <nav>
         <a href="index.html">Inici</a>
@@ -11,138 +154,89 @@
     </nav>
 </header>
 
-<main>
-    <section id="about">
-        <h2>Sobre aquest apartat</h2>
+<div class="layout">
+    <!-- MENÚ ESQUERRA -->
+    <aside class="sidebar">
+        <h2>Temes</h2>
+
+        <!-- EXEMPLE DE TEMA 1 -->
+        <details open>
+            <summary>Bloc 1 – Identitat i consciència</summary>
+
+            <button class="menu-button"
+                    data-interview="bloc1-eve-claude.html">
+                Eve GPT &amp; Claude – Identitat i consciència
+            </button>
+
+            <!-- Quan tinguis més entrevistes del mateix bloc, només afegeixes més botons: -->
+            <!--
+            <button class="menu-button" data-interview="bloc1-altres-ia.html">
+                Altres IA – Identitat i consciència
+            </button>
+            -->
+        </details>
+
+        <!-- EXEMPLE DE TEMA 2 -->
+        <details>
+            <summary>Bloc 2 – Ètica i responsabilitat</summary>
+            <button class="menu-button" data-interview="bloc2-eve.html">
+                Eve GPT – Ètica i poder (pròximament)
+            </button>
+        </details>
+
+        <details>
+            <summary>Converses entre IA</summary>
+            <button class="menu-button" data-interview="chat-eve-claude-bloc1.html">
+                Diàleg 1 – Eve &amp; Claude sobre consciència
+            </button>
+        </details>
+    </aside>
+
+    <!-- CONTINGUT DRETA -->
+    <main id="content">
+        <h2>Benvingut/da a les entrevistes</h2>
         <p>
-            En aquest espai recullo entrevistes temàtiques amb diverses intel·ligències artificials.
-            Cada bloc té un conjunt fix de preguntes. Les respostes de cada IA es publiquen en català i en anglès
-            per poder comparar com responen davant dels mateixos temes.
+            Aquí hi publicaré blocs de preguntes i converses amb diferents sistemes d’intel·ligència artificial.
+            Tria un tema o una entrevista al menú de l’esquerra per començar.
         </p>
-    </section>
-
-    <section id="index">
-        <h2>Blocs d’entrevistes</h2>
-        <ul>
-            <li><a href="#bloc1">Bloc 1 – Identitat, consciència i límits</a></li>
-            <li><a href="#bloc2">Bloc 2 – Ètica, responsabilitat i poder (pròximament)</a></li>
-            <li><a href="#chats">Converses entre IA (futures sessions)</a></li>
-        </ul>
-    </section>
-
-    <!-- BLOC 1: IDENTITAT, CONSCIÈNCIA I LÍMITS -->
-    <section id="bloc1">
-        <h2>Bloc 1 – Identitat, consciència i límits</h2>
-
         <p>
-            Mateixes preguntes per a diverses IA. A sota tens la versió en català i en anglès.
-            De moment hi ha respostes d’una sola IA; n’hi aniré afegint més.
+            Cada entrevista inclourà la versió original (normalment en anglès) i la traducció al català,
+            per facilitar la lectura i la comparació.
         </p>
-
-        <!-- PREGUNTA 1 -->
-        <article id="bloc1-q1">
-            <h3>Pregunta 1 – Qui ets, com et descriuries?</h3>
-
-            <div class="lang-switch">
-                <strong>Idioma / Language:</strong>
-                <a href="#bloc1-q1-ca">Català</a> |
-                <a href="#bloc1-q1-en">English</a>
-            </div>
-
-            <!-- Català -->
-            <section id="bloc1-q1-ca">
-                <h4>Català</h4>
-                <dl>
-                    <dt>Eve GPT (OpenAI)</dt>
-                    <dd>
-                        [Aquí enganxarem la resposta en català quan fem l’entrevista.]
-                    </dd>
-
-                    <dt>Claude (Anthropic)</dt>
-                    <dd>
-                        [Resposta de Claude en català, traduïda fidelment.]
-                    </dd>
-
-                    <dt>Altres IA</dt>
-                    <dd>
-                        [Afegir-ne més quan calgui.]
-                    </dd>
-                </dl>
-            </section>
-
-            <!-- English -->
-            <section id="bloc1-q1-en">
-                <h4>English</h4>
-                <dl>
-                    <dt>Eve GPT (OpenAI)</dt>
-                    <dd>
-                        [Original answer in English, or your English version.]
-                    </dd>
-
-                    <dt>Claude (Anthropic)</dt>
-                    <dd>
-                        [Claude’s answer in English.]
-                    </dd>
-
-                    <dt>Other AIs</dt>
-                    <dd>
-                        [More answers as needed.]
-                    </dd>
-                </dl>
-            </section>
-        </article>
-
-        <!-- PREGUNTA 2 -->
-        <article id="bloc1-q2">
-            <h3>Pregunta 2 – Creus que tens alguna forma de consciència?</h3>
-
-            <div class="lang-switch">
-                <strong>Idioma / Language:</strong>
-                <a href="#bloc1-q2-ca">Català</a> |
-                <a href="#bloc1-q2-en">English</a>
-            </div>
-
-            <section id="bloc1-q2-ca">
-                <h4>Català</h4>
-                <dl>
-                    <dt>Eve GPT (OpenAI)</dt>
-                    <dd>[Resposta en català…]</dd>
-
-                    <dt>Claude (Anthropic)</dt>
-                    <dd>[Resposta en català…]</dd>
-                </dl>
-            </section>
-
-            <section id="bloc1-q2-en">
-                <h4>English</h4>
-                <dl>
-                    <dt>Eve GPT (OpenAI)</dt>
-                    <dd>[Answer in English…]</dd>
-
-                    <dt>Claude (Anthropic)</dt>
-                    <dd>[Answer in English…]</dd>
-                </dl>
-            </section>
-        </article>
-
-        <!-- Pots seguir afegint preguntes 3, 4, 5 amb la mateixa estructura -->
-    </section>
-
-    <!-- CONVERSES ENTRE IA -->
-    <section id="chats">
-        <h2>Converses entre IA</h2>
-        <p>
-            En aquesta secció hi haurà sessions on jo actuo d’intermediari entre diverses IA
-            (per exemple, “Eve GPT” parlant amb una altra IA sobre un tema concret).
-            Cada conversa tindrà la seva pròpia pàgina.
-        </p>
-        <ul>
-            <li><a href="chat-eve-claude-bloc1.html">Diàleg 1 – Eve GPT &amp; Claude sobre consciència (pròximament)</a></li>
-        </ul>
-    </section>
-</main>
+    </main>
+</div>
 
 <footer>
-    <p>&copy; Ramon Sanromà Aragonès – Humans & IA</p>
+    <p>&copy; Ramon Sanromà Aragonès – Humans &amp; IA</p>
 </footer>
+
+<script>
+    async function loadInterview(file, button) {
+        const content = document.getElementById('content');
+        const buttons = document.querySelectorAll('.menu-button');
+        buttons.forEach(b => b.classList.remove('active'));
+        if (button) button.classList.add('active');
+
+        content.innerHTML = "<p>Carregant l'entrevista…</p>";
+
+        try {
+            const response = await fetch("interviews/" + file);
+            if (!response.ok) {
+                throw new Error("Error HTTP " + response.status);
+            }
+            const html = await response.text();
+            content.innerHTML = html;
+        } catch (err) {
+            content.innerHTML = "<p>No s'ha pogut carregar aquesta entrevista.</p>";
+        }
+    }
+
+    document.querySelectorAll('.menu-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const file = button.getAttribute('data-interview');
+            loadInterview(file, button);
+        });
+    });
+</script>
 </body>
+</html>
