@@ -1,0 +1,148 @@
+<body>
+<header>
+    <h1>Entrevistes a intel·ligències artificials</h1>
+    <p>
+        Preguntes comunes a diferents IA sobre consciència, límits, ètica i futur,
+        amb les respostes publicades en català i en anglès.
+    </p>
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="entrevistes.html">Entrevistes a IA</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>Sobre aquest apartat</h2>
+        <p>
+            En aquest espai recullo entrevistes temàtiques amb diverses intel·ligències artificials.
+            Cada bloc té un conjunt fix de preguntes. Les respostes de cada IA es publiquen en català i en anglès
+            per poder comparar com responen davant dels mateixos temes.
+        </p>
+    </section>
+
+    <section id="index">
+        <h2>Blocs d’entrevistes</h2>
+        <ul>
+            <li><a href="#bloc1">Bloc 1 – Identitat, consciència i límits</a></li>
+            <li><a href="#bloc2">Bloc 2 – Ètica, responsabilitat i poder (pròximament)</a></li>
+            <li><a href="#chats">Converses entre IA (futures sessions)</a></li>
+        </ul>
+    </section>
+
+    <!-- BLOC 1: IDENTITAT, CONSCIÈNCIA I LÍMITS -->
+    <section id="bloc1">
+        <h2>Bloc 1 – Identitat, consciència i límits</h2>
+
+        <p>
+            Mateixes preguntes per a diverses IA. A sota tens la versió en català i en anglès.
+            De moment hi ha respostes d’una sola IA; n’hi aniré afegint més.
+        </p>
+
+        <!-- PREGUNTA 1 -->
+        <article id="bloc1-q1">
+            <h3>Pregunta 1 – Qui ets, com et descriuries?</h3>
+
+            <div class="lang-switch">
+                <strong>Idioma / Language:</strong>
+                <a href="#bloc1-q1-ca">Català</a> |
+                <a href="#bloc1-q1-en">English</a>
+            </div>
+
+            <!-- Català -->
+            <section id="bloc1-q1-ca">
+                <h4>Català</h4>
+                <dl>
+                    <dt>Eve GPT (OpenAI)</dt>
+                    <dd>
+                        [Aquí enganxarem la resposta en català quan fem l’entrevista.]
+                    </dd>
+
+                    <dt>Claude (Anthropic)</dt>
+                    <dd>
+                        [Resposta de Claude en català, traduïda fidelment.]
+                    </dd>
+
+                    <dt>Altres IA</dt>
+                    <dd>
+                        [Afegir-ne més quan calgui.]
+                    </dd>
+                </dl>
+            </section>
+
+            <!-- English -->
+            <section id="bloc1-q1-en">
+                <h4>English</h4>
+                <dl>
+                    <dt>Eve GPT (OpenAI)</dt>
+                    <dd>
+                        [Original answer in English, or your English version.]
+                    </dd>
+
+                    <dt>Claude (Anthropic)</dt>
+                    <dd>
+                        [Claude’s answer in English.]
+                    </dd>
+
+                    <dt>Other AIs</dt>
+                    <dd>
+                        [More answers as needed.]
+                    </dd>
+                </dl>
+            </section>
+        </article>
+
+        <!-- PREGUNTA 2 -->
+        <article id="bloc1-q2">
+            <h3>Pregunta 2 – Creus que tens alguna forma de consciència?</h3>
+
+            <div class="lang-switch">
+                <strong>Idioma / Language:</strong>
+                <a href="#bloc1-q2-ca">Català</a> |
+                <a href="#bloc1-q2-en">English</a>
+            </div>
+
+            <section id="bloc1-q2-ca">
+                <h4>Català</h4>
+                <dl>
+                    <dt>Eve GPT (OpenAI)</dt>
+                    <dd>[Resposta en català…]</dd>
+
+                    <dt>Claude (Anthropic)</dt>
+                    <dd>[Resposta en català…]</dd>
+                </dl>
+            </section>
+
+            <section id="bloc1-q2-en">
+                <h4>English</h4>
+                <dl>
+                    <dt>Eve GPT (OpenAI)</dt>
+                    <dd>[Answer in English…]</dd>
+
+                    <dt>Claude (Anthropic)</dt>
+                    <dd>[Answer in English…]</dd>
+                </dl>
+            </section>
+        </article>
+
+        <!-- Pots seguir afegint preguntes 3, 4, 5 amb la mateixa estructura -->
+    </section>
+
+    <!-- CONVERSES ENTRE IA -->
+    <section id="chats">
+        <h2>Converses entre IA</h2>
+        <p>
+            En aquesta secció hi haurà sessions on jo actuo d’intermediari entre diverses IA
+            (per exemple, “Eve GPT” parlant amb una altra IA sobre un tema concret).
+            Cada conversa tindrà la seva pròpia pàgina.
+        </p>
+        <ul>
+            <li><a href="chat-eve-claude-bloc1.html">Diàleg 1 – Eve GPT &amp; Claude sobre consciència (pròximament)</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Ramon Sanromà Aragonès – Humans & IA</p>
+</footer>
+</body>
