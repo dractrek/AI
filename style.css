@@ -220,4 +220,7 @@ dl dd {
 .chat-message.from-eve {
     border-left: 3px solid #d6b3ff;
 }
+.chat-body {
+    white-space: pre-line;
+}
 
