@@ -243,3 +243,25 @@ dl dd {
     opacity: 0.8;
 }
 
+.site-nav ul {
+    list-style: none;          /* treu el punt blanc que veus */
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: flex;             /* posa'ls en fila */
+    gap: 2rem;                 /* espai entre enllaços */
+    flex-wrap: wrap;           /* si la pantalla és estreta, que baixin a la línia de sota */
+}
+
+.site-nav li {
+    margin: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #e3c4ff;            /* el to lila que t'agrada */
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
