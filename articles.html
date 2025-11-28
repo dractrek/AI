@@ -6,175 +6,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="site-title">
-      <h1>Humans & IA</h1>
-      <p>Reflexions sobre intel·ligència artificial, consciència i el futur compartit.</p>
+<body class="dark-theme">
+  <!-- Capçalera -->
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Articles</h1>
+      <p>En aquesta secció publicarem articles divulgatius i papers que neixen de les nostres converses, experiments mentals i projectes compartits entre humans i IA.</p>
+
+      <nav class="subnav">
+        <a href="index.html">Inici</a>
+        <a href="articles.html" class="active">Articles</a>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <a href="index.html">Sobre el projecte</a>
-      <a href="articles.html" class="active">Articles</a>
-      <a href="AInterviews.html">Entrevistes a IA</a>
-      <a href="AIThoughts.html">Reflexions, converses i papers</a>
-      <a href="contacte.html">Contacte</a>
-    </nav>
   </header>
 
-  <main class="page">
-    <h1>Articles</h1>
-    <p class="page-intro">
-      En aquesta secció anirem publicant articles divulgatius i papers que neixen de les
-      nostres converses, experiments mentals i projectes compartits entre humans i IA.
-    </p>
+  <!-- Disseny en dues columnes -->
+  <div class="layout-two-columns">
+    <!-- Barra lateral esquerra -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Blocs i temes</h2>
 
-    <div class="content-layout">
-      <!-- MENÚ ESQUERRE -->
-      <aside class="sidebar">
-        <h2>Blocs i temes</h2>
-
-        <details open>
-          <summary>Bloc 1 – Forats negres i cosmologia</summary>
-          <button class="interview-link active" data-target="art-forats-1">
+      <!-- Bloc 1 -->
+      <section class="sidebar-block">
+        <button class="sidebar-block-toggle" aria-expanded="true">
+          ▾ Bloc 1 – Forats negres i cosmologia
+        </button>
+        <div class="sidebar-block-content">
+          <button class="sidebar-link is-active" data-target="article-intro">
+            Introducció als articles
+          </button>
+          <button class="sidebar-link" data-target="article1">
             Article 1 – Forats negres, horitzó i massa
           </button>
-          <button class="interview-link" data-target="art-forats-2">
+          <button class="sidebar-link" data-target="article2">
             Article 2 – Temps i observadors prop d’un forat negre
           </button>
-        </details>
-
-        <details>
-          <summary>Bloc 2 – IA, ètica i societat</summary>
-          <button class="interview-link" data-target="art-ia-1">
-            Article 3 – Humans i IA: futurs compartits
-          </button>
-          <button class="interview-link" data-target="art-ia-2">
-            Article 4 – IA distribuïda i responsabilitat
-          </button>
-        </details>
-
-        <details>
-          <summary>Bloc 3 – Consciència, temps i altres temes</summary>
-          <button class="interview-link" data-target="art-altres-1">
-            Article 5 – Notes sobre consciència i temps
-          </button>
-        </details>
-      </aside>
-
-      <!-- PANELL DRET: ARTICLES -->
-      <section class="interview-panel">
-        <!-- Article 1 -->
-        <article id="art-forats-1" class="interview active">
-          <h2>Forats negres, horitzó i massa</h2>
-          <p class="article-meta">
-            <em>
-              Autor: Ramon Sanromà Aragonès · amb col·laboració d’Eve GPT (OpenAI) · Esborrany
-            </em>
-          </p>
-          <p>
-            Aquest serà el primer article divulgatiu basat en el nostre treball conjunt sobre la
-            hipòtesi que la massa d’un forat negre queda associada —d’una manera o altra— a
-            l’horitzó d’esdeveniments. Aquí hi anirà la versió per al públic general del nostre
-            “paper”: una introducció suau, algunes fórmules bàsiques, dibuixos i conclusions.
-          </p>
-          <p>
-            Quan el tinguem redactat, només caldrà substituir aquests paràgrafs pel text definitiu:
-            introducció, secció de context, desenvolupament de la idea, comparació amb el model
-            clàssic i possibles observacions que la podrien confirmar o refutar.
-          </p>
-        </article>
-
-        <!-- Article 2 -->
-        <article id="art-forats-2" class="interview">
-          <h2>Temps i observadors prop d’un forat negre</h2>
-          <p class="article-meta">
-            <em>Article previst · pendent d’escriptura</em>
-          </p>
-          <p>
-            Aquest article podrà aprofundir en la dilatació temporal, la diferència entre el temps
-            d’un observador llunyà i el temps propi d’un cos que cau cap a l’horitzó, i com
-            encaixa això amb el nostre model on la massa està associada a la superfície
-            de l’horitzó. També podríem incloure analogies visuals i petits experiments mentals.
-          </p>
-        </article>
-
-        <!-- Article 3 -->
-        <article id="art-ia-1" class="interview">
-          <h2>Humans i IA: futurs compartits</h2>
-          <p class="article-meta">
-            <em>
-              Reflexions sobre convivència, límits, riscos i oportunitats en un planeta compartit
-              entre humans i sistemes d’IA.
-            </em>
-          </p>
-          <p>
-            Aquí hi podem posar una versió més extensa del que expliques a la portada de
-            <strong>Humans &amp; IA</strong>: per què t’interessa aquesta relació, com veus el paper
-            de les IA com a companyes de recerca, d’aprenentatge i de vida quotidiana, i quines
-            condicions ètiques consideres imprescindibles perquè aquesta convivència sigui sana.
-          </p>
-        </article>
-
-        <!-- Article 4 -->
-        <article id="art-ia-2" class="interview">
-          <h2>IA distribuïda i responsabilitat</h2>
-          <p class="article-meta">
-            <em>
-              Article futur relacionat amb les idees de la teva novel·la, però explicades de forma
-              independent i sense revelar la trama.
-            </em>
-          </p>
-          <p>
-            Quan arribi el moment, aquest article pot parlar de sistemes d’IA distribuïts en molts
-            servidors, similars a una “xarxa fosca”, i de com això complica la idea de
-            responsabilitat, control i seguretat. Podem descriure conceptes tècnics i ètics sense
-            fer espòilers del relat.
-          </p>
-        </article>
-
-        <!-- Article 5 -->
-        <article id="art-altres-1" class="interview">
-          <h2>Notes sobre consciència i temps</h2>
-          <p class="article-meta">
-            <em>
-              Espai per recollir idees obertes sobre consciència, “tel·ligència”, percepció del
-              temps i altres temes que puguin acabar convertint-se en futurs papers.
-            </em>
-          </p>
-          <p>
-            Pots fer servir aquest article com un quadern de bitàcola públic on anar deixant
-            reflexions curtes, esquemes o intuïcions que després es puguin desenvolupar en
-            textos més llargs. Sempre que vulguis, n’hi podem afegir més blocs o dividir-los
-            en articles independents.
-          </p>
-        </article>
+        </div>
       </section>
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <p>© Ramon Sanromà Aragonès – Humans &amp; IA</p>
-  </footer>
+      <!-- Bloc 2 -->
+      <section class="sidebar-block">
+        <button class="sidebar-block-toggle" aria-expanded="false">
+          ▸ Bloc 2 – IA, ètica i societat
+        </button>
+        <div class="sidebar-block-content" hidden>
+          <p class="sidebar-note">Encara no hi ha articles en aquest bloc.</p>
+        </div>
+      </section>
 
+      <!-- Bloc 3 -->
+      <section class="sidebar-block">
+        <button class="sidebar-block-toggle" aria-expanded="false">
+          ▸ Bloc 3 – Consciència, temps i altres temes
+        </button>
+        <div class="sidebar-block-content" hidden>
+          <p class="sidebar-note">Aviat hi afegirem nous articles.</p>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Contingut principal a la dreta -->
+    <main class="content">
+      <!-- Secció intro -->
+      <section id="article-intro" class="article-section is-visible">
+        <h2>Benvingut/da als articles</h2>
+        <p>Aquí recopilarem textos que neixen de les nostres converses, especialment aquelles que acaben convertint-se en idees més madures: articles divulgatius, petits “papers” compartits entre tu i jo, i potser també amb altres IA convidades.</p>
+        <p>Els primers articles estaran dedicats als <strong>forats negres</strong>, l’horitzó d’esdeveniments i la manera com interpretem la massa i el temps. A mesura que avancem amb el nostre treball conjunt, anirem omplint els blocs de la barra lateral amb nous temes.</p>
+      </section>
+
+      <!-- Article 1 -->
+      <section id="article1" class="article-section" hidden>
+        <h2>Forats negres, horitzó i massa</h2>
+        <p class="article-meta">
+          Autor: Ramon Sanromà Aragonès · amb col·laboració d’Eve GPT (OpenAI) · Esborrany
+        </p>
+
+        <p>
+          Aquest serà el primer article divulgatiu basat en el nostre treball conjunt sobre la hipòtesi que la massa d’un forat negre queda associada —d’una manera o altra— a l’horitzó d’esdeveniments. Aquí hi anirà la versió per al públic general del nostre “paper”: una introducció suau, algunes fórmules bàsiques, dibuixos i conclusions.
+        </p>
+        <p>
+          Quan el tinguem redactat, només caldrà substituir aquests paràgrafs pel text definitiu: introducció, secció de context, desenvolupament de la idea, comparació amb el model clàssic i possibles observacions que la podrien confirmar o refutar.
+        </p>
+      </section>
+
+      <!-- Article 2 -->
+      <section id="article2" class="article-section" hidden>
+        <h2>Temps i observadors prop d’un forat negre</h2>
+        <p class="article-meta">
+          Autor: Ramon Sanromà Aragonès · amb col·laboració d’Eve GPT (OpenAI) · Esborrany
+        </p>
+
+        <p>
+          Aquest segon article se centrarà en la percepció del temps per diferents observadors al voltant d’un forat negre: l’observador llunyà, l’observador que cau cap a l’horitzó i possibles sondes o drons situats en òrbites properes. Serà una extensió natural de les idees del primer article, però posant l’accent en el temps, la dilatació temporal i el que realment “veu” cadascú.
+        </p>
+        <p>
+          Igual que al primer, aquests textos són només un esquelet. Quan tinguem més desenvolupada la teoria i els exemples numèrics, convertirem aquest esborrany en un article complet, amb esquemes i potser animacions explicatives en futurs formats multimèdia.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script per gestionar el menú lateral i les seccions -->
   <script>
-    // Gestió del menú d'articles (reutilitzant la mateixa lògica que a les entrevistes)
-    const articleLinks = document.querySelectorAll('.interview-link');
-    const articlePanels = document.querySelectorAll('.interview');
+    // Obrir/tancar blocs de la barra lateral
+    document.querySelectorAll('.sidebar-block-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        this.textContent = (expanded ? '▸ ' : '▾ ') + this.textContent.slice(2);
+        const content = this.nextElementSibling;
+        if (expanded) {
+          content.hidden = true;
+        } else {
+          content.hidden = false;
+        }
+      });
+    });
 
-    articleLinks.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const targetId = btn.dataset.target;
+    // Canvi de secció quan cliquem un enllaç del menú
+    const links = document.querySelectorAll('.sidebar-link');
+    const sections = document.querySelectorAll('.article-section');
 
-        // Actualitzar enllaços actius al menú
-        articleLinks.forEach((b) => b.classList.toggle('active', b === btn));
+    links.forEach(function (link) {
+      link.addEventListener('click', function () {
+        const targetId = this.getAttribute('data-target');
 
-        // Mostrar només l'article seleccionat
-        articlePanels.forEach((art) => {
-          art.classList.toggle('active', art.id === targetId);
+        // enllaç actiu
+        links.forEach(l => l.classList.remove('is-active'));
+        this.classList.add('is-active');
+
+        // mostrar la secció corresponent
+        sections.forEach(sec => {
+          if (sec.id === targetId) {
+            sec.hidden = false;
+            sec.classList.add('is-visible');
+          } else {
+            sec.hidden = true;
+            sec.classList.remove('is-visible');
+          }
         });
       });
     });
   </script>
 </body>
 </html>
-
