@@ -1,0 +1,114 @@
+<main class="page">
+  <h1>Articles</h1>
+  <p class="page-intro">
+    En aquesta secció publicaré articles divulgatius i reflexions sobre física,
+    intel·ligència artificial, consciència i altres temes relacionats.
+    Pots navegar pels blocs de temes amb el menú de l’esquerra.
+  </p>
+
+  <div class="content-layout">
+    <!-- MENÚ ESQUERRA -->
+    <aside class="sidebar">
+      <h2>Blocs i temes</h2>
+
+      <details open>
+        <summary>Bloc 1 – Cosmologia i forats negres</summary>
+        <button class="article-link active" data-article-id="art-forats-1">
+          Forats negres, horitzó i massa
+        </button>
+        <button class="article-link" data-article-id="art-forats-2">
+          Temps, observadors i horitzó d’esdeveniments
+        </button>
+      </details>
+
+      <details>
+        <summary>Bloc 2 – IA, ètica i societat</summary>
+        <button class="article-link" data-article-id="art-ia-1">
+          IA distribuïda i límits ètics (esborrany)
+        </button>
+        <button class="article-link" data-article-id="art-ia-2">
+          Humans, IA i futurs compartits
+        </button>
+      </details>
+
+      <details>
+        <summary>Bloc 3 – Altres temes</summary>
+        <button class="article-link" data-article-id="art-altres-1">
+          Notes sobre consciència i temps
+        </button>
+      </details>
+    </aside>
+
+    <!-- PANELL ARTICLE DRETA -->
+    <section class="article-panel">
+      <!-- Article 1 -->
+      <article id="art-forats-1" class="article active">
+        <h2>Forats negres, horitzó i massa</h2>
+        <p class="article-meta">
+          <em>Autor: Ramon Sanromà Aragonès · Versió preliminar</em>
+        </p>
+        <p>
+          Aquest article forma part del treball conjunt amb Eve GPT sobre la
+          interpretació dels forats negres, l’horitzó d’esdeveniments i on
+          “viu” realment la massa. És una versió divulgativa del
+          nostre primer paper.
+        </p>
+        <p>
+          Aquí pots enganxar el text de l’article quan el tinguis:
+          introducció, context, punts clau, petites figures, etc.
+        </p>
+      </article>
+
+      <!-- Article 2 -->
+      <article id="art-forats-2" class="article">
+        <h2>Temps, observadors i horitzó d’esdeveniments</h2>
+        <p class="article-meta">
+          <em>Esborrany d’article · en preparació</em>
+        </p>
+        <p>
+          Text de mostra. Quan t’hi posis, aquí podem desenvolupar
+          la part sobre diferents observadors, dilatació temporal i
+          “què vol dir” caure dins d’un forat negre segons el nostre
+          model.
+        </p>
+      </article>
+
+      <!-- Article IA 1 -->
+      <article id="art-ia-1" class="article">
+        <h2>IA distribuïda i límits ètics</h2>
+        <p class="article-meta">
+          <em>Article futur, relacionat amb la teva novel·la (sense espòilers).</em>
+        </p>
+        <p>
+          Aquí, més endavant, podem fer una versió 100% divulgativa
+          de la idea d’una IA distribuïda a la xarxa sense revelar
+          parts clau de la trama.
+        </p>
+      </article>
+
+      <!-- Article IA 2 -->
+      <article id="art-ia-2" class="article">
+        <h2>Humans, IA i futurs compartits</h2>
+        <p class="article-meta">
+          <em>Reflexions inicials sobre cooperació humà–IA.</em>
+        </p>
+        <p>
+          Pots aprofitar una part del que ja hem parlat a la secció
+          “Sobre el projecte”, però en format article.
+        </p>
+      </article>
+
+      <!-- Article Altres 1 -->
+      <article id="art-altres-1" class="article">
+        <h2>Notes sobre consciència i temps</h2>
+        <p class="article-meta">
+          <em>Apunts i idees per a futurs articles o papers.</em>
+        </p>
+        <p>
+          Aquí podries anar recollint les idees que després voldràs
+          desenvolupar en profunditat (per exemple, la “tel·ligència”).
+        </p>
+      </article>
+    </section>
+  </div>
+</main>
