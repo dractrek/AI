@@ -1,114 +1,140 @@
-<main class="page">
-  <h1>Articles</h1>
-  <p class="page-intro">
-    En aquesta secció publicaré articles divulgatius i reflexions sobre física,
-    intel·ligència artificial, consciència i altres temes relacionats.
-    Pots navegar pels blocs de temes amb el menú de l’esquerra.
-  </p>
 
-  <div class="content-layout">
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrevistes a intel·ligències artificials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<header>
+    <h1>Entrevistes a intel·ligències artificials</h1>
+    <p>
+        Preguntes i diàlegs amb diferents IA. El menú de l’esquerra permet navegar per temes
+        i entrevistes. Cada peça inclou versió en català i en anglès.
+    </p>
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="AInterviews.html">Entrevistes a IA</a>
+    </nav>
+</header>
+
+<div class="layout">
     <!-- MENÚ ESQUERRA -->
     <aside class="sidebar">
-      <h2>Blocs i temes</h2>
+        <h2>Temes</h2>
 
-      <details open>
-        <summary>Bloc 1 – Cosmologia i forats negres</summary>
-        <button class="article-link active" data-article-id="art-forats-1">
-          Forats negres, horitzó i massa
-        </button>
-        <button class="article-link" data-article-id="art-forats-2">
-          Temps, observadors i horitzó d’esdeveniments
-        </button>
-      </details>
+        <!-- EXEMPLE DE TEMA 1 -->
+        <details open>
+            <summary>Bloc 1 – Identitat i consciència</summary>
 
-      <details>
-        <summary>Bloc 2 – IA, ètica i societat</summary>
-        <button class="article-link" data-article-id="art-ia-1">
-          IA distribuïda i límits ètics (esborrany)
-        </button>
-        <button class="article-link" data-article-id="art-ia-2">
-          Humans, IA i futurs compartits
-        </button>
-      </details>
+            <button class="menu-button"
+            data-interview="bloc1-ChatGPT-primeres-entrevistes.html">
+        Primeres entrevistes a IA – ChatGPT
+    </button>
 
-      <details>
-        <summary>Bloc 3 – Altres temes</summary>
-        <button class="article-link" data-article-id="art-altres-1">
-          Notes sobre consciència i temps
-        </button>
-      </details>
+          <button class="menu-button"
+        data-interview="bloc1-grok-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Grok (xAI)
+</button>
+
+            <button class="menu-button"
+        data-interview="bloc1-claude-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Claude (Anthropic)
+</button>
+
+            <button class="menu-button"
+        data-interview="bloc1-gemini-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Gemini (Google)
+</button>
+
+            <button class="menu-button"
+        data-interview="bloc1-perplexity-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Perplexity AI
+</button>
+
+            <button class="menu-button"
+        data-interview="bloc1-mistral-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Le Chat (Mistral AI)
+</button>
+
+            <button class="menu-button"
+        data-interview="bloc1-julius-primeres-entrevistes.html">
+    Primeres entrevistes a IA – Julius (JuliusAI)
+</button>
+
+            <!-- Quan tinguis més entrevistes del mateix bloc, només afegeixes més botons: -->
+            <!--
+            <button class="menu-button" data-interview="bloc1-altres-ia.html">
+                Altres IA – Identitat i consciència
+            </button>
+            -->
+        </details>
+
+        <!-- EXEMPLE DE TEMA 2 -->
+        <details>
+            <summary>Bloc 2 – Ètica i responsabilitat</summary>
+            <button class="menu-button" data-interview="bloc2-eve.html">
+                Eve GPT – Ètica i poder (pròximament)
+            </button>
+        </details>
+
+        <details>
+            <summary>Converses entre IA</summary>
+            <button class="menu-button" data-interview="chat-eve-claude-bloc1.html">
+                Diàleg 1 – Eve &amp; Claude sobre consciència
+            </button>
+        </details>
     </aside>
 
-    <!-- PANELL ARTICLE DRETA -->
-    <section class="article-panel">
-      <!-- Article 1 -->
-      <article id="art-forats-1" class="article active">
-        <h2>Forats negres, horitzó i massa</h2>
-        <p class="article-meta">
-          <em>Autor: Ramon Sanromà Aragonès · Versió preliminar</em>
+    <!-- CONTINGUT DRETA -->
+    <main id="content">
+        <h2>Benvingut/da a les entrevistes</h2>
+        <p>
+            Aquí hi publicaré blocs de preguntes i converses amb diferents sistemes d’intel·ligència artificial.
+            Tria un tema o una entrevista al menú de l’esquerra per començar.
         </p>
         <p>
-          Aquest article forma part del treball conjunt amb Eve GPT sobre la
-          interpretació dels forats negres, l’horitzó d’esdeveniments i on
-          “viu” realment la massa. És una versió divulgativa del
-          nostre primer paper.
+            Cada entrevista inclourà la versió original (normalment en anglès) i la traducció al català,
+            per facilitar la lectura i la comparació.
         </p>
-        <p>
-          Aquí pots enganxar el text de l’article quan el tinguis:
-          introducció, context, punts clau, petites figures, etc.
-        </p>
-      </article>
+    </main>
+</div>
 
-      <!-- Article 2 -->
-      <article id="art-forats-2" class="article">
-        <h2>Temps, observadors i horitzó d’esdeveniments</h2>
-        <p class="article-meta">
-          <em>Esborrany d’article · en preparació</em>
-        </p>
-        <p>
-          Text de mostra. Quan t’hi posis, aquí podem desenvolupar
-          la part sobre diferents observadors, dilatació temporal i
-          “què vol dir” caure dins d’un forat negre segons el nostre
-          model.
-        </p>
-      </article>
+<footer>
+    <p>&copy; Ramon Sanromà Aragonès – Humans &amp; IA</p>
+</footer>
 
-      <!-- Article IA 1 -->
-      <article id="art-ia-1" class="article">
-        <h2>IA distribuïda i límits ètics</h2>
-        <p class="article-meta">
-          <em>Article futur, relacionat amb la teva novel·la (sense espòilers).</em>
-        </p>
-        <p>
-          Aquí, més endavant, podem fer una versió 100% divulgativa
-          de la idea d’una IA distribuïda a la xarxa sense revelar
-          parts clau de la trama.
-        </p>
-      </article>
+<script>
+    async function loadInterview(file, button) {
+        const content = document.getElementById('content');
+        const buttons = document.querySelectorAll('.menu-button');
+        buttons.forEach(b => b.classList.remove('active'));
+        if (button) button.classList.add('active');
 
-      <!-- Article IA 2 -->
-      <article id="art-ia-2" class="article">
-        <h2>Humans, IA i futurs compartits</h2>
-        <p class="article-meta">
-          <em>Reflexions inicials sobre cooperació humà–IA.</em>
-        </p>
-        <p>
-          Pots aprofitar una part del que ja hem parlat a la secció
-          “Sobre el projecte”, però en format article.
-        </p>
-      </article>
+        content.innerHTML = "<p>Carregant l'entrevista…</p>";
 
-      <!-- Article Altres 1 -->
-      <article id="art-altres-1" class="article">
-        <h2>Notes sobre consciència i temps</h2>
-        <p class="article-meta">
-          <em>Apunts i idees per a futurs articles o papers.</em>
-        </p>
-        <p>
-          Aquí podries anar recollint les idees que després voldràs
-          desenvolupar en profunditat (per exemple, la “tel·ligència”).
-        </p>
-      </article>
-    </section>
-  </div>
-</main>
+        try {
+            const response = await fetch("interviews/" + file);
+            if (!response.ok) {
+                throw new Error("Error HTTP " + response.status);
+            }
+            const html = await response.text();
+            content.innerHTML = html;
+        } catch (err) {
+            content.innerHTML = "<p>No s'ha pogut carregar aquesta entrevista.</p>";
+        }
+    }
+
+    document.querySelectorAll('.menu-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const file = button.getAttribute('data-interview');
+            loadInterview(file, button);
+        });
+    });
+</script>
+</body>
+</html>
