@@ -223,4 +223,23 @@ dl dd {
 .chat-body {
     white-space: pre-line;
 }
+.ai-breadcrumb {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: #c3b7ff;
+}
+
+.ai-breadcrumb a {
+    color: #e0d4ff;
+    text-decoration: none;
+}
+
+.ai-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.ai-breadcrumb span {
+    margin-left: 0.5rem;
+    opacity: 0.8;
+}
 
